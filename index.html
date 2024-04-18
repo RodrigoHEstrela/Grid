@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-br  ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr   ) ;
+            height: 100vh;
+            gap: 10px;
+    
+        
+        }
+        .item{ 
+            background:  red;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        #item1{
+            
+            grid-area: 1/ 1 / 2 / 3;
+        }
+        #item2{
+        
+          grid-area: 2 / 3 / 3 / 5;
+
+        }
+        #item3{
+            
+            grid-area: 3 / 1 / 5 / 3;
+        }
+        #item4{
+            grid-area: 4/ 4 / 4/ 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="item1" class="item">Item 1</div>
+    <div id="item2" class="item">Item 2</div>
+    <div id="item3" class="item">Item 3</div>
+    <div id="item4" class="item">item 4</div>
+
+    <div class="sla1"></div>
+    <div class="sla2"></div>
+    <div class="sla3"></div>
+    <div class="sla4"></div>
+    <div class="sla5"></div>
+</body>
+</html>
